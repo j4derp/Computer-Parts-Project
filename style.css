@@ -51,7 +51,7 @@ body{
 
 /* Header */
 header {
-  background: #E0FFFF; /* Soft Ivory */
+  background: #431006; /* Soft Ivory */
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
 }
 
 footer {
-  background: #E0FFFF; /* Soft Ivory */
+  background: #431006; /* Soft Ivory */
   padding: 15px 0;
   border-bottom: 1.5px solid lightpink;
   
