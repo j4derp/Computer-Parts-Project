@@ -22,3 +22,44 @@
   width: 100%;
   margin-top: px;
 }
+
+.content hr {
+  border: none;
+  height: 6px;
+  max-width: 280px;
+  marging-top: 8px;
+  background: #ffalal;
+}
+
+.content h1{
+  font-size: 180px;
+  font-weight: 100;
+  color: #cfcfcf;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  line-height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
