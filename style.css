@@ -61,7 +61,7 @@ header {
 }
 
 header .container {
-  display: right;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   color: black;
@@ -69,15 +69,15 @@ header .container {
 
 header .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: #D7837F; /* Dusty Rose */
+  font-size: 35px;
+  color: #FFFF; /* Dusty Rose */
   font-weight: bold;
 
 }
 
 header nav ul {
   list-style: none;
-  display: right;
+  display: flex;
   gap: 10px;
   color: #f2c9d3;
 }
@@ -85,7 +85,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #121212; /* Pale Aqua */
-  font-size: 1.6em;
+  font-size: 1.2em;
   transition: color 0.3s;
 }
 
@@ -128,7 +128,7 @@ footer p {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: black;
+  color: white;
 }
 
 
