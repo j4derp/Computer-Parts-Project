@@ -83,7 +83,7 @@ header .logo {
 
 header nav ul {
   list-style: none;
-  display: right;
+  display: flex;
   gap: 10px;
   color: #f2c9d3;
 }
