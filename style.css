@@ -2,12 +2,6 @@ Table{
   display: table;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: black;
-}
 
 .row{
   display: table-row;
