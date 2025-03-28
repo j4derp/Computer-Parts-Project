@@ -113,3 +113,15 @@ h3 {
 br {
   font-size: 20px;
 }
+
+.content1 {
+  background-color: #345e7d;
+  width: 500px;
+  border: 7px solid #233e52;
+  padding: 60px;
+  margin: 20px;
+  align: center;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
