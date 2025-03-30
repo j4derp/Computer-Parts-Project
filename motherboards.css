@@ -24,7 +24,7 @@
 
 .content .logo {
   width: 200px;
-  max-width: 40%
+  max-width: 40%;
   margin-top: px;
 }
 
@@ -59,11 +59,11 @@
 .sidebar {
   width: 100%;
   height: 170px;
-  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent); /* Gradient for a smoother transition */
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
   backdrop-filter: blur(1px);
 }
 
