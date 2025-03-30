@@ -114,98 +114,70 @@ br {
   font-size: 20px;
 }
 
-.content1 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
+.page-container {
+  display: flex;
+  margin-top: 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.components-nav {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  position: sticky;
+  top: 180px;
+  height: fit-content;
+  border-radius: 10px;
+  margin-left: 20px;
+  order: 2;
+}
+
+.components-nav h2 {
+  color: #345e7d;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.content2 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.content3 {
+.component-box {
   background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
+  border: 2px solid #233e52;
+  padding: 12px;
+  border-radius: 8px;
   color: white;
   text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
 }
 
-.content4 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-box:hover {
+  background-color: #233e52;
+  transform: translateX(5px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.content5 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-content {
+  flex: 1;
+  padding: 0 20px;
+  order: 1;
 }
 
-.content6 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-content h1 {
+  margin-bottom: 30px;
 }
 
-.content7 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-content h2 {
+  color: #345e7d;
+  margin: 20px 0;
 }
 
-.content8 {
-  background-color: #345e7d;
-  width: 500px;
-  border: 7px solid #233e52;
-  padding: 60px;
-  margin: 20px;
-  align: center;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
+.component-content p {
+  line-height: 1.6;
+  color: #333;
 }
