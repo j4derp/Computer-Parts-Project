@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="motherboards.css">
+ <link rel="stylesheet" href="bios.css">
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
  <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie:regular" rel="stylesheet" />
@@ -33,7 +33,7 @@
         <a href="motherboards.html" class="component-link">
             <div class="component-box">Motherboards</div>
         </a>
-        <a href="#bios" class="component-link">
+        <a href="Bios.html" class="component-link">
             <div class="component-box">BIOS/UEFI</div>
         </a>
         <a href="#memory" class="component-link">
@@ -53,131 +53,102 @@
         </a>
      </div>
       <div class="component-content">
-            <h1>Motherboard</h1>
+            <h1>BIOS/UEFI</h1>
             <div class="info-section">
                 <h2>Introduction</h2>
-<p>A motherboard (also called system board, logic board, or mainboard) is a circuit board that either houses, or connects to, all components operating in the computer.
-</p>
-                <img src="motherboard.png" alt="Motherboard" class="section-image">
+<p>The following table describes Unified Extensible Firmware Interface (UEFI), Basic Input/Output System (BIOS), Electrically Erasable Programmable Read-Only Memory (EEPROM), and Complementary Metal-Oxide Semiconductor (CMOS).</p>
+                <img src="bios.png" alt="BIOS" class="section-image">
                 
-                <h2>Motherboard Specs</h2>
-             <p>When selecting a motherboard, consider the following motherboard specifications.</p>
+                <h2>Component Descriptions</h2>
+           
                 <div class="feature-list">
-                    <ul>
-                        <li>Central Processing Unit (CPU) socket type</li>
-                        <li>Memory module compatibility</li>
-                        <li>Number of memory slots</li>
-                        <li>Maximum supported memory</li>
-                        <li>Expansion slot count and type</li>
-                        <li>Onboard devices (video, audio, or network)</li>
-                    </ul>
+                 <h3>UEFI</h3>
+                 <p>The UEFI was designed to replace the BIOS. Important facts about UEFI include:</p>
+                <ul>
+<li>The UEFI is firmware.</li>
+<li>The UEFI program controls the startup process; it also loads the operating system into memory.</li>
+<li>The UEFI design improves the software interoperability and the address limitations of BIOS.</li>
+<li>The UEFI provides better security to protect against bootkits (malware attacks on the boot process).</li>
+<li>The UEFI provides faster startup times.</li>
+<li>The UEFI supports drives larger than 2.2 terabytes.</li>
+<li>The UEFI supports 64-bit firmware device drivers.</li>
+<li>The UEFI is compatible with both BIOS and UEFI hardware.</li>
+<li>You should frequently check for UEFI updates from the manufacturer. Flashing is the process of updating the UEFI. Flashing makes new features available.</li>
+                 
+                </ul>
                 </div>
 
-                <h2>Typical Components</h2>
+          
                 <div class="form-factor-card">
+                 <h3>Bios</h3>
       
-                   <p>A typical motherboard includes the following components.</p>
-                 <h3>CPU socket</h3>
-                 <p>The CPU socket houses the CPU. There are a variety of CPU socket types. Each have unique shapes, pin arrangements, or mounting configurations.
-</p>
-                    <ul>
-                        <li>Different types of motherboard sockets exist to fit different generations of CPUs. It's important that the socket is compatible with the new CPU's mounting holes and pin array.</li>
-                        <li>You may be able to determine the type of socket on a motherboard by looking at the computer's model number and then using the manufacture's web site to locate the CPU socket type.</li>
-                        <li>Some motherboards are manufactured with multisocket processing capability and may support dual or quad-socket processing in the CPU.</li>
-                        <li>Server motherboards used for cloud computing are multisocket processors with gigantic memory capacity. They:
-<u> <li> Can act as the hub for running many computers.</li>
-<li>Can handle massive amounts of data simultaneously.</li>
-<li>Are robust enough to support a storage area network (SAN) environment.</li>
-       </u></li>
-                    </ul>
+<p>The BIOS is a legacy program stored in a read-only memory (ROM) chip that the CPU automatically loads and executes when it receives power. Important things to know about the BIOS are:</p>                 <h3>CPU socket</h3>
+             <ul>
+              <li>The BIOS program controls the startup process and loads the operating system into memory.</li>
+<li>The BIOS is firmware.</li>
+<li>You should frequently check for BIOS updates from the manufacturer. Updating the BIOS (called flashing the BIOS) makes new features available, such as allowing the BIOS to recognize newer hardware devices.</li>
+<li>Most BIOS chips vary from 265 KB to 1 MB in size.</li>
+<li>Video cards include a BIOS chip on the device. These devices have their own ROM chip called an option ROM (OpROM).</li>   
+             </ul>
                  
                     <div class="form-factor-card">
-                     <h2>Memory Slots</h2>
-                  <p>Most motherboards have multiple slots to add memory cards. Memory slots are compatible with a specific type of memory module. Always refer to the motherboard documentation.
-</p>
+                     <h3>EEPROM	</h3>
+<p>The EEPROM is a ROM chip that replaced the CMOS chip. Important things about EEPROM are:</p>
+             <ul>
+              <li>EEPROM is a type of non-volatile memory used in computers and other electronic devices to store relatively small amounts of data.</li>
+<li>EEPROM allows individual bytes to be erased and reprogrammed.</li>
+<li>EEPROM replaced EPROM chips and is used for computer BIOS built after 1994.</li>
+<li>EEPROM chips allow you to update the BIOS/UEFI in a computer without opening the computer and removing any chips.</li>
+             </ul>
                 </div>
 
                 <div class="form-factor-card">
-                    <h2>Peripheral Component Interconnect
-(PCI)</h2> 
-                 <p>PCI slots are often called expansion slots or expansion buses. They allow you to add cards to expand the capabilities of a computer by installing expansion cards. There are from one to six PCI slots available on a motherboard.
-There are a number of expansion slot types, including:</p>
-                    <ul>
-                        <li>PCI</li>
-                        <li>PCI-X (PCI Extended)</li>
-                     <li>PCIe (PCI Express)</li>
-                     <li>Accelerated Graphics Port (AGP)</li>
-                    </ul>
+                   <h3>CMOS</h3>
+                 <p>CMOS is legacy computer chip technology that has become a general term used for the program that stores important system information related to starting a computer. It is often used synonymously with BIOS.</p>
+<br>
+                 <p>Data held in CMOS includes the hard disk type and configuration; the order of boot devices; and other configurable settings related to the system hardware. Important facts about CMOS include:
+</p><
+     <ul>
+      <li>To change the data stored in CMOS, you use a CMOS editor program that is part of the BIOS.</li>
+<li>CMOS used to refer to the real-time clock and the CMOS chip that stored system information. Both were powered by a CMOS battery. Now, the EEPROM chip stores the system information that was on the CMOS chip. EEPROM requires no power to maintain data storage.</li>
+<li>The CMOS battery is still used to keep the real-time system clock running when the computer is powered off. It can be a low-voltage dry cell, lithium mounted on the motherboard, or even AA batteries in a housing clipped on a wall inside of the case. The electric current is about 1 millionth of an amp and can provide effective power for years.</li>
+     </ul>
                 </div>
+                 
 
-                <div class="form-factor-card">
-                    <h2>Integrated components</h2>
-                  <p>Many motherboards include integrated (onboard) components such as network cards, audio cards, and video cards. They can also include USB and FireWire connections. <br>
+      <div class="form-factor-card">
+<p>During the computer's startup procedure, you can press one or more keys to open a CMOS editor to change the data stored in CMOS memory. This CMOS setup program is part of the BIOS program. The key or keys you press to open the CMOS editor depend on the BIOS manufacturer. The easiest way to find out which key to press is to read the screen as it boots or to consult the motherboard documentation. The most common keys are Delete, Insert, F1, and F2.</p>
+<br><p>Common reasons for editing the CMOS settings are to:</p>     
+       <ul>
+        <li>Change the boot device order.</li>
+<li>Enable or disable motherboard devices.</li>
+<li>Add a password to the setup program to prevent unauthorized access.</li>
+<li>Remove the password for most motherboards, move (remove a jumper) and replace it after a specific period of time.</li>
+<li>Configure processor or memory settings (e.g., when you need to set operating speeds or when you want to overclock hardware settings).</li>
+<li>Manually configure device properties for legacy devices. (You do this only in rare cases).</li>
+       </ul>
+     <br>
+       <p>One of the main jobs of the BIOS/UEFI is to help start the system. The following process occurs when you turn on a computer:</p>
+       <ol>
+        <li>Power is supplied to the processor. The processor is hard-coded to look at a special memory address for the code to execute.</li>
+<li>This memory address contains a pointer or jump program that instructs the processor where to find the BIOS program.</li>
+The processor loads the BIOS program. The first BIOS process to run is the power-on self-test (POST) process. POST does the following:
+<ul>
+ <li>Verifies the integrity of the BIOS/UEFI code.</li>
+<li>Looks for the BIOS on the video card and loads it. This powers the video card and results in information displayed on the monitor.</li>
+<li>Looks for BIOS programs on other devices (such as hard disk controllers) and loads those.</li>
+<li>Tests system devices, such as verifying the amount of memory on the system.</li></ul></li>
+<li>After POST tests complete, the BIOS identifies other system devices. It uses CMOS settings and information supplied by the devices themselves to identify and configure hardware devices. It allocates system resources to plug-and-play devices.</li>
+<li>The BIOS searches for a boot drive using the boot order specified in the CMOS.</li>
+<li>On the boot device, the BIOS/UEFI searches for the master bootloader and loads the bootloader program. At this point, the BIOS/UEFI stops controlling the system and passes control to the bootloader program.</li>
+<li>The bootloader program is configured to locate and load the operating system.</li>
+<li>As the operating system loads, steps are taken to load all additional programs and configure devices for use by the operating system.</li>
+       </ol>
+      <br>
+       <p>From time to time, a PC manufacturer may release updates to the BIOS firmware. To update the BIOS, you download the update along with a utility provided by the PC manufacturer. You flash the BIOS to rewrite data stored in the BIOS chip. The steps you follow to flash the BIOS will vary by manufacturer.</p>
+      </div>
 
-Selecting a motherboard with integrated devices is typically cheaper than buying separate expansion cards for each feature. However, the quality of these onboard devices might not be as high as dedicated expansion cards.</p>
-                </div>
-
-                <div class="form-factor-card">
-<h2>I/O Connectors</h2>                 
-<p>I/O connectors for onboard components are located on the back of the motherboard. These connectors typically include:
-</p>                   
-               <ul>
-                        <li>PS/2 mouse and keyboard ports</li>
-                        <li>USB ports</li>
-                        <li>Serial ports (COM 1, 2, 3, and 4)</li>
-                        <li>Parallel port</li>
-                <li>Audio jacks</li>
-                <li>Ethernet port</li>
-                    </ul>
-                </div>
-
-                <div class="form-factor-card">
-                    <h2>Internal Connectors</h2>
-                <p>
-                 <p>The motherboard has internal connectors so that components (such as case fans, LED lights, CPU power, etc.) can be plugged in. A motherboard can have a header (a rectangular-shaped connector with male pins) for any component that allows an external connection (e.g., audio header, network header, serial port header, USB header, etc.).</p>
-                    <ul>
-                        <li>The motherboard connects to the front panel ports (e.g., USB, FireWire, or audio ports) of the computer case via the front panel header connectors.
-</li>
-                        <li>The main power connector usually attaches to the motherboard using a 20- or 24-pin connector to generate power to all its components. Newer models have additional 4 and 8-pin connectors to supply more power.</li>
-                        <li>External connectors to the motherboard are not available except by adding expansion cards.
-<ul><li>external SATA (eSATA) uses an expansion card to provide an external variant of the SATA known as Serial Advanced Technology Attachment solid-state drive (SSD).</li>
-<li>M.2, formerly known as Next Generation Form Factor (NGFF), can integrate multiple functions (including SSD) as a faster option than SATA.</li>
-<li>Always verify a motherboard's compatibility by referring to the documentation to make sure the M.2 module works with the socket.</li> </ul></li>
-                    </ul>
-                </div>
-
-                <div class="form-factor-card">
-                   <h2>Firmware</h2>
-                 <p>The firmware on a motherboard is stored on integrated flash memory. Motherboards use one of two firmware implementations:</p>
-                    <ul>
-                        <li>BIOS (Basic Input/Output System</li>
-                        <li>FI (Unified Extensible Firmware Interface)</li>
-                    </ul>
-                </div>
-                    <div class="form-factor-card">
-                     <h2>CMOS Battery</h2>
-<p>The CMOS battery keeps the accurate date and time, even when the motherboard has no power. In older motherboards, the CMOS battery also retained BIOS configuration settings, which were stored in volatile memory called the CMOS chip.
-</p>
-                </div>
-                    <div class="form-factor-card">
-                   <h2>Chipset</h2>
-<p>The chipset is a group of chips that facilitates communication between the processor, memory, and peripheral devices.</p>   
-                     <br>With chipsets:
-                     <ul>
-                        <li>The memory controller and graphics controller are on the CPU.</li>
-                        <li>The remaining functionality is combined into a single controller chip. <ul>
-<li>Intel processors use the Platform Controller Hub (PCH).</li>
-<li>AMD processors use the Fusion Controller Hub (FCH).</li></ul></li>
-                      <li>A Direct Media Interface (DMI) replaces the front-side bus.</li>
-                    </ul>
-                </div>
-                    <div class="form-factor-card">
-                   <h2>Motherboard documentation
-& support manual</h2>
-                 <p>A motherboard's support manual is an excellent source of information. Support manuals contain technical specifications as well as diagrams that identify the motherboard's components.<br>
-
-To ensure compatibility, always check the motherboard documentation whenever you are upgrading, customizing, or replacing components. If you don't have the motherboard support manual, check the manufacturer's website.</p>
-                </div>
+         
             </div>
         </div>
     </div>
