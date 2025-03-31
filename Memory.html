@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="motherboards.css">
+ <link rel="stylesheet" href="memory.css">
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
  <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie:regular" rel="stylesheet" />
@@ -36,7 +36,7 @@
         <a href="Bios.html" class="component-link">
             <div class="component-box">BIOS/UEFI</div>
         </a>
-        <a href="#memory" class="component-link">
+        <a href="Memory.html" class="component-link">
             <div class="component-box">Memory</div>
         </a>
         <a href="#cpu" class="component-link">
@@ -53,130 +53,57 @@
         </a>
      </div>
       <div class="component-content">
-            <h1>Motherboard</h1>
+            <h1>Memory</h1>
             <div class="info-section">
-                <h2>Introduction</h2>
-<p>A motherboard (also called system board, logic board, or mainboard) is a circuit board that either houses, or connects to, all components operating in the computer.
-</p>
-                <img src="motherboard.png" alt="Motherboard" class="section-image">
+                <h2>Memory Characteristics</h2>
+<p>The best way to ensure that you get the correct RAM for a system is to consult the motherboard documentation. In addition, there are several websites on the internet where you can look up the system or scan the system to find the correct memory type to install. When selecting RAM, consider the following factors:</p>
+                <img src="memory.jpg" alt="memory" class="section-image">
                 
-                <h2>Motherboard Specs</h2>
-             <p>When selecting a motherboard, consider the following motherboard specifications.</p>
+                <h2>Packaging (memory form)</h2>
+             <p>When you are purchasing RAM for a system, the most important consideration is the packaging, also called memory form. Keep in mind:</p>
                 <div class="feature-list">
                     <ul>
-                        <li>Central Processing Unit (CPU) socket type</li>
-                        <li>Memory module compatibility</li>
-                        <li>Number of memory slots</li>
-                        <li>Maximum supported memory</li>
-                        <li>Expansion slot count and type</li>
-                        <li>Onboard devices (video, audio, or network)</li>
+                        <li>Packaging and capacity must be supported by the motherboard.</li>
+<li>The packaging controls both the physical size of the memory module and the memory standard (e.g., DDR2, DDR3, DDR4).
+<li>If you purchase the wrong type of RAM:
+<ul><li>It will most likely not fit.</li>
+<li>If does fit, it might have different voltage requirements than what is supported by the motherboard.</li></ul></li>
+                   
                     </ul>
-                </div>
+                 <h2>Capacity</h2>
+                 <p>The capacity (sometimes called the size) refers to the storage capacity of the memory module (e.g., 256 MB, 512 MB, 1 GB). The total capacity of memory that you can install in a system is limited by:</p>
+                 <ul
+                  <li>The number of memory slots on the motherboard.</li>
+                  <li>The maximum total capacity that can be installed. For example, most systems will have a maximum capacity of between 3 GB and 16 GB of RAM.</li>
+                  <li>The maximum module capacity. For example, the motherboard might be able to accept only up to 2 GB or 4 GB modules.</li>
+                  <li>The maximum amount of memory that can be addressed (used) by the operating system. A 32-bit operating system can use between 3 GB and 4 GB of memory, while a 64-bit operating system can use much more.</li>
+</ul>
+                 <p>For example,</p>
+                 <ul>
+                  <li>A motherboard has a total of three slots, with a maximum module size of 8 GB and a system maximum of 24 GB.</li>
+                  <li>You have two 4 GB modules installed.</li>
+                  <li>You can add only a single 8 GB module.</li>
+                  <li>That brings the total up to 16 GB.</li>
+                  <li>You could also replace one or both of the 4 GB modules, bringing the total to 20 or 24 GB respectively.</li>
+                 </ul>
+              
 
-                <h2>Typical Components</h2>
-                <div class="form-factor-card">
+                <h2>Parity RAM	</h2>
+         
       
-                   <p>A typical motherboard includes the following components.</p>
-                 <h3>CPU socket</h3>
-                 <p>The CPU socket houses the CPU. There are a variety of CPU socket types. Each have unique shapes, pin arrangements, or mounting configurations.
-</p>
-                    <ul>
-                        <li>Different types of motherboard sockets exist to fit different generations of CPUs. It's important that the socket is compatible with the new CPU's mounting holes and pin array.</li>
-                        <li>You may be able to determine the type of socket on a motherboard by looking at the computer's model number and then using the manufacture's web site to locate the CPU socket type.</li>
-                        <li>Some motherboards are manufactured with multisocket processing capability and may support dual or quad-socket processing in the CPU.</li>
-                        <li>Server motherboards used for cloud computing are multisocket processors with gigantic memory capacity. They:
-<u> <li> Can act as the hub for running many computers.</li>
-<li>Can handle massive amounts of data simultaneously.</li>
-<li>Are robust enough to support a storage area network (SAN) environment.</li>
-       </u></li>
-                    </ul>
-                 
-                    <div class="form-factor-card">
-                     <h2>Memory Slots</h2>
-                  <p>Most motherboards have multiple slots to add memory cards. Memory slots are compatible with a specific type of memory module. Always refer to the motherboard documentation.
-</p>
-                </div>
+<p>Parity memory is a type of memory that checks for common kinds of internal data corruption. It does not correct internal data corruption. Non-parity memory does not perform error checking.</p>               
 
-                <div class="form-factor-card">
-                    <h2>Peripheral Component Interconnect
-(PCI)</h2> 
-                 <p>PCI slots are often called expansion slots or expansion buses. They allow you to add cards to expand the capabilities of a computer by installing expansion cards. There are from one to six PCI slots available on a motherboard.
-There are a number of expansion slot types, including:</p>
-                    <ul>
-                        <li>PCI</li>
-                        <li>PCI-X (PCI Extended)</li>
-                     <li>PCIe (PCI Express)</li>
-                     <li>Accelerated Graphics Port (AGP)</li>
-                    </ul>
+                 <h2>Memory Troubleshooting</h2>
+                 <h3>The system boot fails and sounds a beep code</h3>
+<p>Either no memory is installed or the memory was not detected.</p>
+                  <h3>The system boots, but the display remains blank	</h3>
+                 <p>Either a card or memory module is not seated, or the system includes unsupported memory. Non-parity RAM is incompatible with ECC memory; SDRAM is incompatible with EDO memory.</p>
+                 <h3>The system boots, but the memory count is incorrect	</h3>
+                 <p>The POST failed to recognize all the memory. This can happen with incompatible memory installation. Remember to avoid combining dual-bank with single-bank memory. If you detect a problem during system boot, check the BIOS settings.</p>
                 </div>
+                    
 
-                <div class="form-factor-card">
-                    <h2>Integrated components</h2>
-                  <p>Many motherboards include integrated (onboard) components such as network cards, audio cards, and video cards. They can also include USB and FireWire connections. <br>
-
-Selecting a motherboard with integrated devices is typically cheaper than buying separate expansion cards for each feature. However, the quality of these onboard devices might not be as high as dedicated expansion cards.</p>
-                </div>
-
-                <div class="form-factor-card">
-<h2>I/O Connectors</h2>                 
-<p>I/O connectors for onboard components are located on the back of the motherboard. These connectors typically include:
-</p>                   
-               <ul>
-                        <li>PS/2 mouse and keyboard ports</li>
-                        <li>USB ports</li>
-                        <li>Serial ports (COM 1, 2, 3, and 4)</li>
-                        <li>Parallel port</li>
-                <li>Audio jacks</li>
-                <li>Ethernet port</li>
-                    </ul>
-                </div>
-
-                <div class="form-factor-card">
-                    <h2>Internal Connectors</h2>
-                <p>
-                 <p>The motherboard has internal connectors so that components (such as case fans, LED lights, CPU power, etc.) can be plugged in. A motherboard can have a header (a rectangular-shaped connector with male pins) for any component that allows an external connection (e.g., audio header, network header, serial port header, USB header, etc.).</p>
-                    <ul>
-                        <li>The motherboard connects to the front panel ports (e.g., USB, FireWire, or audio ports) of the computer case via the front panel header connectors.
-</li>
-                        <li>The main power connector usually attaches to the motherboard using a 20- or 24-pin connector to generate power to all its components. Newer models have additional 4 and 8-pin connectors to supply more power.</li>
-                        <li>External connectors to the motherboard are not available except by adding expansion cards.
-<ul><li>external SATA (eSATA) uses an expansion card to provide an external variant of the SATA known as Serial Advanced Technology Attachment solid-state drive (SSD).</li>
-<li>M.2, formerly known as Next Generation Form Factor (NGFF), can integrate multiple functions (including SSD) as a faster option than SATA.</li>
-<li>Always verify a motherboard's compatibility by referring to the documentation to make sure the M.2 module works with the socket.</li> </ul></li>
-                    </ul>
-                </div>
-
-                <div class="form-factor-card">
-                   <h2>Firmware</h2>
-                 <p>The firmware on a motherboard is stored on integrated flash memory. Motherboards use one of two firmware implementations:</p>
-                    <ul>
-                        <li>BIOS (Basic Input/Output System</li>
-                        <li>FI (Unified Extensible Firmware Interface)</li>
-                    </ul>
-                </div>
-                    <div class="form-factor-card">
-                     <h2>CMOS Battery</h2>
-<p>The CMOS battery keeps the accurate date and time, even when the motherboard has no power. In older motherboards, the CMOS battery also retained BIOS configuration settings, which were stored in volatile memory called the CMOS chip.
-</p>
-                </div>
-                    <div class="form-factor-card">
-                   <h2>Chipset</h2>
-<p>The chipset is a group of chips that facilitates communication between the processor, memory, and peripheral devices.</p>   
-                     <br>With chipsets:
-                     <ul>
-                        <li>The memory controller and graphics controller are on the CPU.</li>
-                        <li>The remaining functionality is combined into a single controller chip. <ul>
-<li>Intel processors use the Platform Controller Hub (PCH).</li>
-<li>AMD processors use the Fusion Controller Hub (FCH).</li></ul></li>
-                      <li>A Direct Media Interface (DMI) replaces the front-side bus.</li>
-                    </ul>
-                </div>
-                    <div class="form-factor-card">
-                   <h2>Motherboard documentation
-& support manual</h2>
-                 <p>A motherboard's support manual is an excellent source of information. Support manuals contain technical specifications as well as diagrams that identify the motherboard's components.<br>
-
-To ensure compatibility, always check the motherboard documentation whenever you are upgrading, customizing, or replacing components. If you don't have the motherboard support manual, check the manufacturer's website.</p>
+   
                 </div>
             </div>
         </div>
