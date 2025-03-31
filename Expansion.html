@@ -39,10 +39,10 @@
         <a href="Memory.html" class="component-link">
             <div class="component-box">Memory</div>
         </a>
-        <a href="#cpu" class="component-link">
+        <a href="CPU.html" class="component-link">
             <div class="component-box">Processors (CPUs)</div>
         </a>
-        <a href="#video" class="component-link">
+        <a href="Expansion.html" class="component-link">
             <div class="component-box">Video Cards</div>
         </a>
         <a href="#cooling" class="component-link">
@@ -53,65 +53,49 @@
         </a>
      </div>
       <div class="component-content">
-            <h1>Proccessor(CPU's)</h1>
+            <h1>Video and Expansion Cards</h1>
             <div class="info-section">
-                <h2>Proccesor Concepts</h2>
-<p>When selecting a central processing unit (CPU), you must match the motherboard and the CPU. Either select a CPU supported by the motherboard or select a motherboard that supports the processor you have chosen. The following table lists considerations for choosing a processor.</p>            
-             <img src="CPU.png" alt="CPU" class="section-image">
+                <h2> Video and Expansion Types</h2>
+<p>Expansion cards expand a computer's functionality or increase its performance. Expansion cards install into the expansion slot on a motherboard. Expansion bus standards define communication specifications as well as physical characteristics of expansion cards and slots.</p>   
+             <p>Video cards process graphical information for output to an external display. The quality and speed have increased dramatically with PC gaming and cryptocurrency mining. A device called a capture card is growing in use to support streaming and the recording games and videos.</p>
+             <img src="expansion.jpeg" alt="expansion cards" class="section-image">
                  <div class="feature-list">
-                <h2>CPU manufacturer	</h2>
-            
-<p>Intel and AMD are the two major producers of processors used in modern PCs.</p>     
-              <ul>
-               <li>Both Intel and AMD processors work in PC systems and support Windows software.</li>
-<li>Intel has a larger market share; AMD processors generally cost less.</li>
-<li>Processor performance and features vary between models and manufacturers.</li>
+                <h2>Peripheral Component Interconnect</h2>            
+<p>PCI was developed to replace the obsolete Industry Standard Architecture (ISA) and (Video Electronic Standards Association) VESA bus standards. PCI:</p>             
+                  <ul>
+<li>Is processor independent, meaning the CPU and PCI bus can process concurrently.</li>
+<li>Supports plug-and-play, meaning installed devices are detected and configured automatically.</li>
+<li>Is commonly used by devices such as sound cards, modems, network cards, and storage device controllers.</li>
+<li>Can run at 33 MHz and transfer data at 133 MBps or run at 66 MHz and transfer data at 266 MBps.</li>
               </ul>
+       <h2>Legacy buses</h2>
+                  <p>	Buses that have been replaced by newer types are considered legacy buses. Legacy buses are rarely used and include the following:</p>
+                  <ul>
+<li>AGP is a dedicated bus type used by dedicated video cards.</li>
+<li>Audio/modem riser (AMR) is a riser card that attaches to the motherboard and allows additional cards (called daughter cards) to be installed.</li>
+<li>Communications network riser (CNR) is a riser card slot that allows for installing network, sound, or modem functions.</li>
+                   
+                  </ul>
+                 <h2>Intergrated and Dedicated Video Cards</h2>
+    <p>You can implement video cards as a dedicated expansion board or integrated with other components.</p>
+        <p>Integrated video cards:</p>
+                  <ul>
+<li>Integrate the graphics processing unit (GPU) with another hardware component (e.g., the central processing unit (CPU) or motherboard).</li>
+<li>Share system memory for graphic processing.</li>
+<li>Are less expensive than dedicated video cards, but are also less powerful.</li>
+<li>Are installed in most pre-built PCs and found in most laptops. Integrated cards are also used in servers.</li>  
+                  </ul>
+        <p>Dedicated video cards:</p>
+                  <ul>
+                   <li>Are installed in an expansion slot on the motherboard.</li>
+<li>Have a GPU and a dedicated, high-speed video memory bank.</li>
+<li>Are more powerful than most integrated video cards, but are also more expensive.</li>
+<li>Are used in cryptocurrency mining.</li>
+<li>Allow multiple cards to be connected. This is called daisy chaining.</li>
+                  </ul>
                  </div>
-             <div class="feature-list">
-              <h2>Process size	</h2>
-              <p>The process size refers to the manufacturing process used to etch transistors onto the silicon wafer that will become the CPU. A smaller process size means smaller transistors, which translates into a smaller CPU die with more transistors and less power consumption. Process size is expressed in microns (such as .25 microns) or nanometers (90 nm equals .09 microns).</p>
-             </div>
-             
-                 <h2>Hyper-threading	</h2>
-<p>Hyper-threading is a feature of some Intel processors. It allows a single processor to run threads (instructions) in parallel, as opposed to processing threads linearly. Hyper-threading enables a processor to execute two threads at the same time. For example, on a quad-core Intel system that supports hyper-threading, the processor can execute 8 threads at a time (2 on each core).</p>                          
-              <p>Hyper-threading is not the same as multithreading. Multithreading is a feature of an application that allows it to send multiple threads at the same time. Applications are typically written to support multithreading to take advantage of multiple cores (executing threads on two or more processors at the same time) or hyper-threading features.</p>
-              
-
-                <h2>Integrated memory controller		</h2>
-
-         <p>To improve performance, some processors include the memory controller with an integrated graphics processing unit (GPU) on the processor die. This results in faster memory access by the processor.</p>
-      
-                 <h2>Cooling </h2>
-            <p>Processors require a form of heat dissipation system to function properly. Without a heat dissipation system, a processor will overheat and burn out in less than a minute. CPUs use a heat sink, fan, thermal paste, liquid, or fanless cooling system to transfer heat from the CPU to the cooling unit.</p>
-
-             <h2>Processor Troubleshooting</h2>
-             <p>Symptoms of a failed or failing CPU include:</p>
-
-             <ul> 
-              <li>System will not boot.</li> 
-              <li>System boots, but the operating system fails to load.</li> 
-              <li>System has power-on self-test (POST) parity problems with a number of devices.</li>
-              <li>System locks up shortly after startup.</li>
-              <li>This symptom is a possibly thermal issue.</li> 
-              <li>You can check for a thermal issue by shutting down the system, letting the system cool off, and restarting the computer.</li> 
-              <li>If the problem repeats:</li> 
-              <li>Check the heat sink and fan for placement and condition.</li> 
-              <li>Verify that thermal paste or a thermal pad has been used between the processor and the heat sink.</li> 
-              <li>Ensure the heat sink is firmly attached to the CPU.</li>
-              <li>Verify that the CPU is properly seated in its socket.</li>
-              <li>Make sure the system case fans are working and that the case and expansion slots are in place.</li>
-              <li>If the computer has this symptom but is not overheating, the problem could be an incorrectly set clock or system timers in the BIOS/UEFI.</li>
-              <li>System sounds a POST beep code indicating a CPU fault upon boot.</li> 
-              <li>You should verify that the CPU is receiving sufficient power by checking the power outputs.</li>
-              <li>If these are good, replace the CPU.</li> 
-              <li>If the fault remains, the problem is with the motherboard.</li>
-              <li>System crashes on startup or when running a software application or a certain group of applications.</li> 
-              <li>You should run repetitive tests using diagnostic software.</li> <li>If the symptoms remain after replacing a seemingly faulty CPU, run similar tests on the motherboard and chipset.</li> 
-              <li>You should also check for a corrupt file in the software.</li> 
-             </ul>
-            </div>
        
+            </div>
    
                 </div>
             </div>
