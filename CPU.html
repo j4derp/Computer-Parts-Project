@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="bios.css">
+ <link rel="stylesheet" href="cpu.css">
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
  <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie:regular" rel="stylesheet" />
@@ -39,116 +39,82 @@
         <a href="Memory.html" class="component-link">
             <div class="component-box">Memory</div>
         </a>
-        <a href="CPU.html" class="component-link">
+        <a href="#cpu" class="component-link">
             <div class="component-box">Processors (CPUs)</div>
         </a>
-        <a href="Expansion.html" class="component-link">
+        <a href="#video" class="component-link">
             <div class="component-box">Video Cards</div>
         </a>
-        <a href="Cooling.html" class="component-link">
+        <a href="#cooling" class="component-link">
             <div class="component-box">Cooling</div>
         </a>
-        <a href="Power.html" class="component-link">
+        <a href="#power" class="component-link">
             <div class="component-box">Power Supply</div>
         </a>
      </div>
       <div class="component-content">
-            <h1>BIOS/UEFI</h1>
+            <h1>Proccessor(CPU's)</h1>
             <div class="info-section">
-                <h2>Introduction</h2>
-<p>The following table describes Unified Extensible Firmware Interface (UEFI), Basic Input/Output System (BIOS), Electrically Erasable Programmable Read-Only Memory (EEPROM), and Complementary Metal-Oxide Semiconductor (CMOS).</p>
-                <img src="Bios.png" alt="BIOS" class="section-image">
-                
-                <h2>Component Descriptions</h2>
-           
-               <div class="form-factor-card">
-                 <h3>UEFI</h3>
-                 <p>The UEFI was designed to replace the BIOS. Important facts about UEFI include:</p>
-                <ul>
-<li>The UEFI is firmware.</li>
-<li>The UEFI program controls the startup process; it also loads the operating system into memory.</li>
-<li>The UEFI design improves the software interoperability and the address limitations of BIOS.</li>
-<li>The UEFI provides better security to protect against bootkits (malware attacks on the boot process).</li>
-<li>The UEFI provides faster startup times.</li>
-<li>The UEFI supports drives larger than 2.2 terabytes.</li>
-<li>The UEFI supports 64-bit firmware device drivers.</li>
-<li>The UEFI is compatible with both BIOS and UEFI hardware.</li>
-<li>You should frequently check for UEFI updates from the manufacturer. Flashing is the process of updating the UEFI. Flashing makes new features available.</li>
-                 
-                </ul>
-                </div>
+                <h2>Proccesor Concepts</h2>
+<p>When selecting a central processing unit (CPU), you must match the motherboard and the CPU. Either select a CPU supported by the motherboard or select a motherboard that supports the processor you have chosen. The following table lists considerations for choosing a processor.</p>            
+             <img src="CPU.png" alt="CPU" class="section-image">
+                 <div class="feature-list">
+                <h2>CPU manufacturer	</h2>
+            
+<p>Intel and AMD are the two major producers of processors used in modern PCs.</p>     
+              <ul>
+               <li>Both Intel and AMD processors work in PC systems and support Windows software.</li>
+<li>Intel has a larger market share; AMD processors generally cost less.</li>
+<li>Processor performance and features vary between models and manufacturers.</li>
+              </ul>
+                 </div>
+             <div class="feature-list">
+              <h2>Process size	</h2>
+              <p>The process size refers to the manufacturing process used to etch transistors onto the silicon wafer that will become the CPU. A smaller process size means smaller transistors, which translates into a smaller CPU die with more transistors and less power consumption. Process size is expressed in microns (such as .25 microns) or nanometers (90 nm equals .09 microns).</p>
+             </div>
+             
+                 <h2>Hyper-threading	</h2>
+<p>Hyper-threading is a feature of some Intel processors. It allows a single processor to run threads (instructions) in parallel, as opposed to processing threads linearly. Hyper-threading enables a processor to execute two threads at the same time. For example, on a quad-core Intel system that supports hyper-threading, the processor can execute 8 threads at a time (2 on each core).</p>                                   <li>The number of memory slots on the motherboard.</li>
+             
+              <p>Hyper-threading is not the same as multithreading. Multithreading is a feature of an application that allows it to send multiple threads at the same time. Applications are typically written to support multithreading to take advantage of multiple cores (executing threads on two or more processors at the same time) or hyper-threading features.</p>
+              
 
-          
-                <div class="form-factor-card">
-                 <h3>Bios</h3>
+                <h2>Integrated memory controller		</h2>
+
+         <p>To improve performance, some processors include the memory controller with an integrated graphics processing unit (GPU) on the processor die. This results in faster memory access by the processor.</p>
       
-<p>The BIOS is a legacy program stored in a read-only memory (ROM) chip that the CPU automatically loads and executes when it receives power. Important things to know about the BIOS are:</p>               
-             <ul>
-              <li>The BIOS program controls the startup process and loads the operating system into memory.</li>
-<li>The BIOS is firmware.</li>
-<li>You should frequently check for BIOS updates from the manufacturer. Updating the BIOS (called flashing the BIOS) makes new features available, such as allowing the BIOS to recognize newer hardware devices.</li>
-<li>Most BIOS chips vary from 265 KB to 1 MB in size.</li>
-<li>Video cards include a BIOS chip on the device. These devices have their own ROM chip called an option ROM (OpROM).</li>   
+                 <h2>Cooling </h2>
+            <p>Processors require a form of heat dissipation system to function properly. Without a heat dissipation system, a processor will overheat and burn out in less than a minute. CPUs use a heat sink, fan, thermal paste, liquid, or fanless cooling system to transfer heat from the CPU to the cooling unit.</p>
+
+             <h2>Processor Troubleshooting</h2>
+             <p>Symptoms of a failed or failing CPU include:</p>
+
+             <ul> 
+              <li>System will not boot.</li> 
+              <li>System boots, but the operating system fails to load.</li> 
+              <li>System has power-on self-test (POST) parity problems with a number of devices.</li>
+              <li>System locks up shortly after startup.</li>
+              <li>This symptom is a possibly thermal issue.</li> 
+              <li>You can check for a thermal issue by shutting down the system, letting the system cool off, and restarting the computer.</li> 
+              <li>If the problem repeats:</li> 
+              <li>Check the heat sink and fan for placement and condition.</li> 
+              <li>Verify that thermal paste or a thermal pad has been used between the processor and the heat sink.</li> 
+              <li>Ensure the heat sink is firmly attached to the CPU.</li>
+              <li>Verify that the CPU is properly seated in its socket.</li>
+              <li>Make sure the system case fans are working and that the case and expansion slots are in place.</li>
+              <li>If the computer has this symptom but is not overheating, the problem could be an incorrectly set clock or system timers in the BIOS/UEFI.</li>
+              <li>System sounds a POST beep code indicating a CPU fault upon boot.</li> 
+              <li>You should verify that the CPU is receiving sufficient power by checking the power outputs.</li>
+              <li>If these are good, replace the CPU.</li> 
+              <li>If the fault remains, the problem is with the motherboard.</li>
+              <li>System crashes on startup or when running a software application or a certain group of applications.</li> 
+              <li>You should run repetitive tests using diagnostic software.</li> <li>If the symptoms remain after replacing a seemingly faulty CPU, run similar tests on the motherboard and chipset.</li> 
+              <li>You should also check for a corrupt file in the software.</li> 
              </ul>
-                 
-                    <div class="form-factor-card">
-                     <h3>EEPROM	</h3>
-<p>The EEPROM is a ROM chip that replaced the CMOS chip. Important things about EEPROM are:</p>
-             <ul>
-              <li>EEPROM is a type of non-volatile memory used in computers and other electronic devices to store relatively small amounts of data.</li>
-<li>EEPROM allows individual bytes to be erased and reprogrammed.</li>
-<li>EEPROM replaced EPROM chips and is used for computer BIOS built after 1994.</li>
-<li>EEPROM chips allow you to update the BIOS/UEFI in a computer without opening the computer and removing any chips.</li>
-             </ul>
+            </div>
+       
+   
                 </div>
-
-                <div class="form-factor-card">
-                   <h3>CMOS</h3>
-                 <p>CMOS is legacy computer chip technology that has become a general term used for the program that stores important system information related to starting a computer. It is often used synonymously with BIOS.</p>
-<br>
-                 <p>Data held in CMOS includes the hard disk type and configuration; the order of boot devices; and other configurable settings related to the system hardware. Important facts about CMOS include:
-</p><
-     <ul>
-      <li>To change the data stored in CMOS, you use a CMOS editor program that is part of the BIOS.</li>
-<li>CMOS used to refer to the real-time clock and the CMOS chip that stored system information. Both were powered by a CMOS battery. Now, the EEPROM chip stores the system information that was on the CMOS chip. EEPROM requires no power to maintain data storage.</li>
-<li>The CMOS battery is still used to keep the real-time system clock running when the computer is powered off. It can be a low-voltage dry cell, lithium mounted on the motherboard, or even AA batteries in a housing clipped on a wall inside of the case. The electric current is about 1 millionth of an amp and can provide effective power for years.</li>
-     </ul>
-                </div>
-                 
-
-      <div class="form-factor-card">
-<p>During the computer's startup procedure, you can press one or more keys to open a CMOS editor to change the data stored in CMOS memory. This CMOS setup program is part of the BIOS program. The key or keys you press to open the CMOS editor depend on the BIOS manufacturer. The easiest way to find out which key to press is to read the screen as it boots or to consult the motherboard documentation. The most common keys are Delete, Insert, F1, and F2.</p>
-<br><p>Common reasons for editing the CMOS settings are to:</p>     
-       <ul>
-        <li>Change the boot device order.</li>
-<li>Enable or disable motherboard devices.</li>
-<li>Add a password to the setup program to prevent unauthorized access.</li>
-<li>Remove the password for most motherboards, move (remove a jumper) and replace it after a specific period of time.</li>
-<li>Configure processor or memory settings (e.g., when you need to set operating speeds or when you want to overclock hardware settings).</li>
-<li>Manually configure device properties for legacy devices. (You do this only in rare cases).</li>
-       </ul>
-     <br>
-       <p>One of the main jobs of the BIOS/UEFI is to help start the system. The following process occurs when you turn on a computer:</p>
-       <ol>
-        <li>Power is supplied to the processor. The processor is hard-coded to look at a special memory address for the code to execute.</li>
-<li>This memory address contains a pointer or jump program that instructs the processor where to find the BIOS program.</li>
-The processor loads the BIOS program. The first BIOS process to run is the power-on self-test (POST) process. POST does the following:
-<ul>
- <li>Verifies the integrity of the BIOS/UEFI code.</li>
-<li>Looks for the BIOS on the video card and loads it. This powers the video card and results in information displayed on the monitor.</li>
-<li>Looks for BIOS programs on other devices (such as hard disk controllers) and loads those.</li>
-<li>Tests system devices, such as verifying the amount of memory on the system.</li></ul></li>
-<li>After POST tests complete, the BIOS identifies other system devices. It uses CMOS settings and information supplied by the devices themselves to identify and configure hardware devices. It allocates system resources to plug-and-play devices.</li>
-<li>The BIOS searches for a boot drive using the boot order specified in the CMOS.</li>
-<li>On the boot device, the BIOS/UEFI searches for the master bootloader and loads the bootloader program. At this point, the BIOS/UEFI stops controlling the system and passes control to the bootloader program.</li>
-<li>The bootloader program is configured to locate and load the operating system.</li>
-<li>As the operating system loads, steps are taken to load all additional programs and configure devices for use by the operating system.</li>
-       </ol>
-      <br>
-       <p>From time to time, a PC manufacturer may release updates to the BIOS firmware. To update the BIOS, you download the update along with a utility provided by the PC manufacturer. You flash the BIOS to rewrite data stored in the BIOS chip. The steps you follow to flash the BIOS will vary by manufacturer.</p>
-      </div>
-
-         
             </div>
         </div>
     </div>
