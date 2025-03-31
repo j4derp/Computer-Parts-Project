@@ -53,104 +53,60 @@
         </a>
      </div>
       <div class="component-content">
-            <h1>BIOS/UEFI</h1>
+            <h1>Power Supply</h1>
             <div class="info-section">
                 <h2>Introduction</h2>
-<p>The following table describes Unified Extensible Firmware Interface (UEFI), Basic Input/Output System (BIOS), Electrically Erasable Programmable Read-Only Memory (EEPROM), and Complementary Metal-Oxide Semiconductor (CMOS).</p>
-                <img src="Bios.png" alt="BIOS" class="section-image">
-                
-                <h2>Component Descriptions</h2>
+<p>Power supplies are responsible for powering every component in a computer system. Power supplies perform the following functions:</p>
+             
+             <img src="power.png" alt="Power supply" class="section-image">
+             <ul>
+<li>Convert alternating (AC) power to direct current (DC) power.</li>
+<li>AC is the type of current distributed through wall sockets. The voltage alternates between a negative and a positive charge. AC power is good for appliances requiring a high current.</li>
+<li>DC is the type of current used inside a computer. Negative particles are drawn toward a positive charge, creating a unidirectional current flow. This type of predictable, reliable current is ideal for components that require a lower current.</li>
+<li>Provide components with the correct levels of DC voltage.</li>
+<li>Standard Advanced Technology eXtended (ATX) power supplies provide + 3.3 volts, +/- 5 volts, and +/- 12 volts of DC power. Most modern components require +12 volt output.</li>
+<li>Each voltage output circuit is referred to as a rail and can power multiple devices.</li>
+<li>To avoid overloading one circuit, many newer power supplies have two or more +12 volt rails.</li>
+<li>These are known as dual rail power supplies.</li>
+<li>Separate rails balance the power load between multiple circuits, preventing any one circuit from becoming overloaded.</li>
+<li>Aid in thermal management.</li>
+<li>All ATX power supplies have a fan that cools the unit.</li>
+<li>The fan direction pulls cooler air from the front of the case and blows hot air out the back.</li>
+
            
-               <div class="form-factor-card">
-                 <h3>UEFI</h3>
-                 <p>The UEFI was designed to replace the BIOS. Important facts about UEFI include:</p>
-                <ul>
-<li>The UEFI is firmware.</li>
-<li>The UEFI program controls the startup process; it also loads the operating system into memory.</li>
-<li>The UEFI design improves the software interoperability and the address limitations of BIOS.</li>
-<li>The UEFI provides better security to protect against bootkits (malware attacks on the boot process).</li>
-<li>The UEFI provides faster startup times.</li>
-<li>The UEFI supports drives larger than 2.2 terabytes.</li>
-<li>The UEFI supports 64-bit firmware device drivers.</li>
-<li>The UEFI is compatible with both BIOS and UEFI hardware.</li>
-<li>You should frequently check for UEFI updates from the manufacturer. Flashing is the process of updating the UEFI. Flashing makes new features available.</li>
-                 
-                </ul>
-                </div>
-
-          
-                <div class="form-factor-card">
-                 <h3>Bios</h3>
-      
-<p>The BIOS is a legacy program stored in a read-only memory (ROM) chip that the CPU automatically loads and executes when it receives power. Important things to know about the BIOS are:</p>               
-             <ul>
-              <li>The BIOS program controls the startup process and loads the operating system into memory.</li>
-<li>The BIOS is firmware.</li>
-<li>You should frequently check for BIOS updates from the manufacturer. Updating the BIOS (called flashing the BIOS) makes new features available, such as allowing the BIOS to recognize newer hardware devices.</li>
-<li>Most BIOS chips vary from 265 KB to 1 MB in size.</li>
-<li>Video cards include a BIOS chip on the device. These devices have their own ROM chip called an option ROM (OpROM).</li>   
              </ul>
-                 
-                    <div class="form-factor-card">
-                     <h3>EEPROM	</h3>
-<p>The EEPROM is a ROM chip that replaced the CMOS chip. Important things about EEPROM are:</p>
-             <ul>
-              <li>EEPROM is a type of non-volatile memory used in computers and other electronic devices to store relatively small amounts of data.</li>
-<li>EEPROM allows individual bytes to be erased and reprogrammed.</li>
-<li>EEPROM replaced EPROM chips and is used for computer BIOS built after 1994.</li>
-<li>EEPROM chips allow you to update the BIOS/UEFI in a computer without opening the computer and removing any chips.</li>
-             </ul>
-                </div>
-
-                <div class="form-factor-card">
-                   <h3>CMOS</h3>
-                 <p>CMOS is legacy computer chip technology that has become a general term used for the program that stores important system information related to starting a computer. It is often used synonymously with BIOS.</p>
-<br>
-                 <p>Data held in CMOS includes the hard disk type and configuration; the order of boot devices; and other configurable settings related to the system hardware. Important facts about CMOS include:
-</p><
-     <ul>
-      <li>To change the data stored in CMOS, you use a CMOS editor program that is part of the BIOS.</li>
-<li>CMOS used to refer to the real-time clock and the CMOS chip that stored system information. Both were powered by a CMOS battery. Now, the EEPROM chip stores the system information that was on the CMOS chip. EEPROM requires no power to maintain data storage.</li>
-<li>The CMOS battery is still used to keep the real-time system clock running when the computer is powered off. It can be a low-voltage dry cell, lithium mounted on the motherboard, or even AA batteries in a housing clipped on a wall inside of the case. The electric current is about 1 millionth of an amp and can provide effective power for years.</li>
-     </ul>
-                </div>
-                 
-
-      <div class="form-factor-card">
-<p>During the computer's startup procedure, you can press one or more keys to open a CMOS editor to change the data stored in CMOS memory. This CMOS setup program is part of the BIOS program. The key or keys you press to open the CMOS editor depend on the BIOS manufacturer. The easiest way to find out which key to press is to read the screen as it boots or to consult the motherboard documentation. The most common keys are Delete, Insert, F1, and F2.</p>
-<br><p>Common reasons for editing the CMOS settings are to:</p>     
-       <ul>
-        <li>Change the boot device order.</li>
-<li>Enable or disable motherboard devices.</li>
-<li>Add a password to the setup program to prevent unauthorized access.</li>
-<li>Remove the password for most motherboards, move (remove a jumper) and replace it after a specific period of time.</li>
-<li>Configure processor or memory settings (e.g., when you need to set operating speeds or when you want to overclock hardware settings).</li>
-<li>Manually configure device properties for legacy devices. (You do this only in rare cases).</li>
-       </ul>
-     <br>
-       <p>One of the main jobs of the BIOS/UEFI is to help start the system. The following process occurs when you turn on a computer:</p>
-       <ol>
-        <li>Power is supplied to the processor. The processor is hard-coded to look at a special memory address for the code to execute.</li>
-<li>This memory address contains a pointer or jump program that instructs the processor where to find the BIOS program.</li>
-The processor loads the BIOS program. The first BIOS process to run is the power-on self-test (POST) process. POST does the following:
-<ul>
- <li>Verifies the integrity of the BIOS/UEFI code.</li>
-<li>Looks for the BIOS on the video card and loads it. This powers the video card and results in information displayed on the monitor.</li>
-<li>Looks for BIOS programs on other devices (such as hard disk controllers) and loads those.</li>
-<li>Tests system devices, such as verifying the amount of memory on the system.</li></ul></li>
-<li>After POST tests complete, the BIOS identifies other system devices. It uses CMOS settings and information supplied by the devices themselves to identify and configure hardware devices. It allocates system resources to plug-and-play devices.</li>
-<li>The BIOS searches for a boot drive using the boot order specified in the CMOS.</li>
-<li>On the boot device, the BIOS/UEFI searches for the master bootloader and loads the bootloader program. At this point, the BIOS/UEFI stops controlling the system and passes control to the bootloader program.</li>
-<li>The bootloader program is configured to locate and load the operating system.</li>
-<li>As the operating system loads, steps are taken to load all additional programs and configure devices for use by the operating system.</li>
-       </ol>
-      <br>
-       <p>From time to time, a PC manufacturer may release updates to the BIOS firmware. To update the BIOS, you download the update along with a utility provided by the PC manufacturer. You flash the BIOS to rewrite data stored in the BIOS chip. The steps you follow to flash the BIOS will vary by manufacturer.</p>
-      </div>
-
-         
             </div>
-        </div>
+
+        <div class="form-factor-card">
+                
+                <h2>Troubleshooting Power SUpplies</h2>
+           
+    <p>Following are tips for troubleshooting power supplies.</p>
+                 <ul>
+             <li>Familiarize yourself with the symptoms of a bad power supply.
+             <ul>
+             <li>The computer does not turn on.</li>
+<li>The computer sporadically shuts off or reboots.</li>
+<li>A broken or noisy fan.</li></ul></li>
+
+<li>Rule out the obvious before opening the computer. Make sure:
+<ul><li>The power cord is plugged into the wall.</li>
+<li>The power switch is in the on position.</li>
+<li>The voltage switch is set to the correct voltage.</li> </ul></li>
+<li>Test the power supply using a multimeter or power supply tester. Voltage levels should be within +/- 5% of normal. If they aren't, the power supply is bad or failing and you should replace it.
+<ul><li>12 V rail should be between 11.4 and 12.6 volts.</li>
+<li>5 V rail should be between 4.7 and 5.25 volts.</li>
+<li>3.3 V rail should be between 3.1 and 3.4 volts.</li></ul>
+</li>
+
+<li>Take proper safety precautions. Power supplies carry dangerous levels of electrical current. You should:
+<ul><li>Never ground yourself when working on a power supply.</li>
+<li>Never open or disassemble a power supply. Always replace the entire unit.</li></ul></li>
+
+                  </ul>
+                </div>
+
+      </div>
     </div>
  </div>
  <div class="sidebar"></div>
